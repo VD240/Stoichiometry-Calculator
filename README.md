@@ -55,25 +55,6 @@ Stoichiometry Calculator/
 
 Installation
 
-1. Clone the repository
-
-git clone YOUR_GITHUB_REPOSITORY_URL
-cd "Stoichiometry Calculator"
-
-2. Create a virtual environment
-
-python -m venv venv
-
-3. Activate the environment (Windows PowerShell)
-
-.\venv\Scripts\Activate.ps1
-
-4. Install dependencies
-
-python -m pip install -r requirements.txt
-
-Running the Application
-
 Start the backend
 
 uvicorn backend.main:app --reload
