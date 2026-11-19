@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reaction Balancer & Stoichiometry Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="importmap">
+{
+    "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js"
+    }
+}
+</script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Reaction Balancer</h1>
+        <p>Interactive Chemistry & Stoichiometry Calculator</p>
+    </header>
+
+    <main class="container">
+
+        <section class="calculator-card">
+            <h2>1. Reaction Balancer</h2>
+
+            <input
+                type="text"
+                id="equation"
+                placeholder="Example: H2 + O2 -> H2O"
+            >
+
+            <button onclick="balanceReaction()">Balance Equation</button>
+
+            <div id="balance-result" class="result"></div>
+        </section>
+
+        <section class="calculator-card">
+            <h2>2. Molar Mass Calculator</h2>
+
+            <input
+                type="text"
+                id="formula"
+                placeholder="Example: H2O"
+            >
+
+            <button onclick="calculateMolarMass()">Calculate Molar Mass</button>
+
+            <div id="mass-result" class="result"></div>
+        </section>
+
+        <section class="calculator-card">
+            <h2>3. Limiting Reagent Calculator</h2>
+
+            <input
+                type="text"
+                id="limiting-equation"
+                placeholder="Example: H2 + O2 -> H2O"
+            >
+
+            <textarea
+                id="limiting-moles"
+                placeholder='{"H2": 3, "O2": 1}'
+            ></textarea>
+
+            <button onclick="calculateLimitingReagent()">Find Limiting Reagent</button>
+
+            <div id="limiting-result" class="result"></div>
+        </section>
+
+        <section class="calculator-card">
+            <h2>4. Theoretical Yield Calculator</h2>
+
+            <input
+                type="text"
+                id="yield-equation"
+                placeholder="Example: H2 + O2 -> H2O"
+            >
+
+            <textarea
+                id="yield-moles"
+                placeholder='{"H2": 3, "O2": 2}'
+            ></textarea>
+
+            <input
+                type="text"
+                id="product-formula"
+                placeholder="Product formula: H2O"
+            >
+
+            <button onclick="calculateTheoreticalYield()">Calculate Yield</button>
+
+            <div id="yield-result" class="result"></div>
+        </section>
+
+    <!-- 5. 3D Molecular Visualizer -->
+        <section class="calculator-card visualizer-card">
+            <h2>5. 3D Molecular Visualizer</h2>
+
+            <p>Explore molecular structures in interactive 3D.</p>
+
+            <select id="molecule-select">
+                <option value="H2O">Water (H₂O)</option>
+                <option value="CO2">Carbon Dioxide (CO₂)</option>
+                <option value="CH4">Methane (CH₄)</option>
+                <option value="NH3">Ammonia (NH₃)</option>
+            </select>
+
+            <div id="molecule-viewer"></div>
+            
+            <div id="molecule-info" class="result">
+                Select a molecule to explore its structure.
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+    <script type ="module"
+    src="Visualizer.js"></script>
+
+</body>
+</html>
