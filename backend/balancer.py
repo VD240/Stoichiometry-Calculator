@@ -176,12 +176,3 @@ if __name__== "__main__":
     except ValueError as error:
         print("Error:",error)
 
-# reactants,products = split_equation ("H2 +O2 -> H2O")
-# matrix,elements=build_matrix(reactants,products)
-# coefficients=calculate_coefficients(matrix)
-# balanced=format_equation(reactants,products,coefficients)
-# print("Reactants:" ,reactants)
-# print("Products:",products)
-# print(matrix)
-# print("Calculated coefficients:",coefficients)
-# print("Balanced equation:",balanced)
