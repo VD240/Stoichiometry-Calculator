@@ -79,8 +79,6 @@ POST| "/molar-mass"| Calculate molar mass
 POST| "/limiting-reagent"| Identify limiting reagent
 POST| "/theoretical-yield"| Calculate theoretical yield
 
-Running Automated Tests
-
 Run:
 
 python -m pytest -v
