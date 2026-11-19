@@ -109,8 +109,10 @@ Current test status: 10 automated tests passed.
 Screenshots
 ## Screenshots
 
-### 3D Molecular Visualizer
+### Reaction Balancer
+![Reaction Balancer](screenshots/reaction-balancer.png)
 
+### 3D Molecular Visualizer
 ![3D Molecular Visualizer](screenshots/molecular-visualizer.png)
 
 Future Improvements
